@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiziana Mori - European Project & Program Manager | Ricercatrice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a5276;
+      --secondary: #2e7d32;
+      --accent1: #d35400;
+      --accent2: #006064;
+      --light: #f8f9fa;
+      --dark: #154360;
+      --darker: #0d3c13;
+      --transition: all 0.4s ease;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    /* Fixed Sidebar */
+    .fixed-sidebar {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      background: linear-gradient(135deg, var(--dark), var(--primary));
+      border-radius: 0 10px 10px 0;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      transition: var(--transition);
+    }
+    
+    .sidebar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px 0;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: var(--transition);
+      width: 60px;
+    }
+    
+    .sidebar-item i {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    
+    .sidebar-item span {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+    
+    .sidebar-item:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateX(5px);
+    }
+    
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--dark), var(--primary));
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo h1 {
+      font-size: 1.8rem;
+      font-family: 'Merriweather', serif;
+    }
+    
+    .logo .tagline {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-top: 5px;
+      color: #e0e0e0;
+    }
+    
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-buttons a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      padding: 8px 15px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    
+    .nav-buttons a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: linear-gradient(135deg, var(--light) 0%, transparent 70%);
+      border-radius: 50%;
+      transform: translate(30%, -30%);
+    }
+    
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .profile-image {
+      flex: 0 0 300px;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 3px solid white;
+    }
+    
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .profile-text {
+      flex: 1;
+    }
+    
+    .claim-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    
+    .europe-flag {
+      font-size: 1.8rem;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    .claim {
+      font-size: 1.3rem;
+      color: var(--primary);
+      font-weight: 600;
+      font-style: italic;
+    }
+    
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: var(--dark);
+      font-family: 'Merriweather', serif;
+      line-height: 1.2;
+    }
+    
+    .hero .title {
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 25px;
+      font-weight: 500;
+      padding-left: 5px;
+      border-left: 4px solid var(--accent1);
+    }
+    
+    .hero p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    
+    .languages {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .language-tag {
+      background: var(--light);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      border-left: 4px solid var(--accent1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    /* Professional Approach Section */
+    .approach-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+      color: var(--dark);
+      font-family: 'Merriweather', serif;
+      font-size: 2.3rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--accent1);
+      margin: 15px auto;
+      border-radius: 2px;
+    }
+    
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
+    }
+    
+    .approach-card {
+      background: white;
+      padding: 35px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: var(--transition);
+      border-top: 5px solid var(--primary);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .approach-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+    
+    .approach-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    
+    .approach-card h3 {
+      color: var(--dark);
+      margin-bottom: 20px;
+      font-family: 'Merriweather', serif;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.4rem;
+    }
+    
+    .approach-card h3 i {
+      color: var(--accent1);
+      font-size: 1.6rem;
+    }
+    
+    /* Services Section */
+    .services-section {
+      padding: 100px 0;
+      background: var(--light);
+    }
+    
+    .services-content {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+    }
+    
+    .services-text {
+      flex: 1;
+    }
+    
+    .services-text p {
+      margin-bottom: 25px;
+      font-size: 1.15rem;
+      line-height: 1.7;
+    }
+    
+    .services-list {
+      flex: 1;
+    }
+    
+    .service-item {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border-left: 5px solid var(--primary);
+      transition: var(--transition);
+      position: relative;
+    }
+    
+    .service-item:hover {
+      transform: translateX(10px);
+      border-left-color: var(--accent1);
+    }
+    
+    .service-item h3 {
+      color: var(--dark);
+      margin-bottom: 12px;
+      font-family: 'Merriweather', serif;
+      font-size: 1.3rem;
+    }
+    
+    /* Projects Section - MIGLIORATA */
+    .projects-section {
+      padding: 100px 0;
+      background: white;
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 35px;
+    }
+    
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid #f0f0f0;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    
+    .project-card.tapta { border-top: 6px solid var(--primary); }
+    .project-card.intreccio { border-top: 6px solid var(--secondary); }
+    .project-card.borghi { border-top: 6px solid var(--accent1); }
+    .project-card.agrimotus { border-top: 6px solid var(--accent2); }
+    
+    .card-header {
+      padding: 30px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card-header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transform: translate(30%, -30%);
+    }
+    
+    .tapta .card-header { background: linear-gradient(135deg, var(--primary), #2c3e50); }
+    .intreccio .card-header { background: linear-gradient(135deg, var(--secondary), #1b5e20); }
+    .borghi .card-header { background: linear-gradient(135deg, var(--accent1), #e65100); }
+    .agrimotus .card-header { background: linear-gradient(135deg, var(--accent2), #004d40); }
+    
+    .card-header h3 {
+      font-size: 1.9rem;
+      margin-bottom: 12px;
+      font-family: 'Merriweather', serif;
+      position: relative;
+      z-index: 1;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    
+    .card-header p {
+      position: relative;
+      z-index: 1;
+      opacity: 0.95;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    
+    .card-body {
+      padding: 30px;
+      background: white;
+    }
+    
+    .project-list {
+      list-style-type: none;
+      margin-bottom: 25px;
+    }
+    
+    .project-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.5;
+    }
+    
+    .project-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .project-list li:before {
+      content: "✔";
+      color: var(--primary);
+      margin-right: 12px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    
+    .project-links {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 10px 18px;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 500;
+      gap: 8px;
+    }
+    
+    .project-link.tapta { background: var(--primary); }
+    .project-link.intreccio { background: var(--secondary); }
+    .project-link.borghi { background: var(--accent1); }
+    .project-link.agrimotus { background: var(--accent2); }
+    
+    .project-link:hover {
+      opacity: 0.9;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    /* Contact Section */
+    .contact-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--light) 0%, #e8f5e9 100%);
+    }
+    
+    .contact-content {
+      display: flex;
+      gap: 60px;
+    }
+    
+    .contact-info {
+      flex: 1;
+    }
+    
+    .contact-form {
+      flex: 1;
+    }
+    
+    .contact-info h3 {
+      margin-bottom: 25px;
+      color: var(--dark);
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+    }
+    
+    .contact-details {
+      margin-bottom: 40px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+    
+    .contact-item:hover .contact-icon {
+      background: var(--accent1);
+      transform: scale(1.1);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: var(--secondary);
+      color: white;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: var(--transition);
+      font-size: 1.1rem;
+    }
+    
+    .social-link:hover {
+      background: var(--primary);
+      transform: translateY(-5px);
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 18px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+    
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 82, 118, 0.1);
+      outline: none;
+    }
+    
+    textarea.form-control {
+      min-height: 140px;
+      resize: vertical;
+    }
+    
+    .submit-btn {
+      background: var(--accent1);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+      font-size: 1.1rem;
+    }
+    
+    .submit-btn:hover {
+      background: #e65100;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(211, 84, 0, 0.3);
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 50px 0 25px;
+      text-align: center;
+    }
+    
+    .copyright {
+      margin-top: 40px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .fixed-sidebar {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .profile-image {
+        flex: 0 0 280px;
+        height: 330px;
+      }
+      
+      .services-content {
+        flex-direction: column;
+      }
+      
+      .contact-content {
+        flex-direction: column;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h2 {
+        font-size: 2.4rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+      
+      .nav-buttons {
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .hero h2 {
+        font-size: 2rem;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .hero {
+        padding: 60px 0;
+      }
+      
+      .approach-section, .services-section, .projects-section, .contact-section {
+        padding: 70px 0;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+      
+      .claim {
+        font-size: 1.1rem;
+      }
+      
+      .profile-image {
+        flex: 0 0 250px;
+        height: 300px;
+      }
+      
+      .card-header {
+        padding: 20px;
+      }
+      
+      .card-body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Sidebar -->
+  <div class="fixed-sidebar">
+    <a href="#about" class="sidebar-item">
+      <i class="fas fa-user"></i>
+      <span>Profilo</span>
+    </a>
+    <a href="#approach" class="sidebar-item">
+      <i class="fas fa-bullseye"></i>
+      <span>Approccio</span>
+    </a>
+    <a href="#services" class="sidebar-item">
+      <i class="fas fa-handshake"></i>
+      <span>Servizi</span>
+    </a>
+    <a href="#projects" class="sidebar-item">
+      <i class="fas fa-project-diagram"></i>
+      <span>Progetti</span>
+    </a>
+    <a href="#contact" class="sidebar-item">
+      <i class="fas fa-envelope"></i>
+      <span>Contatti</span>
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Tiziana Mori</h1>
+        <div class="tagline">European Project & Program Manager | Ricercatrice</div>
+      </div>
+      <div class="nav-buttons">
+        <a href="#about">Profilo</a>
+        <a href="#approach">Approccio</a>
+        <a href="#services">Servizi</a>
+        <a href="#projects">Progetti</a>
+        <a href="#contact">Contatti</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container hero-content">
+      <div class="profile-image">
+        <img src="https://raw.githubusercontent.com/TizMori/tiziana-mori-europrogettazione/main/Immagine%20WhatsApp%202025-10-28%20ore%2009.15.31_a298bba7.jpg" alt="Tiziana Mori - European Project Manager">
+      </div>
+      <div class="profile-text">
+        <div class="claim-container">
+          <span class="europe-flag">🇪🇺</span>
+          <span class="claim">European Project Manager: il Ponte tra Idee e Finanziamenti Europei</span>
+        </div>
+        <h2>Tiziana Mori</h2>
+        <div class="title">European Project & Program Manager | Ricercatrice</div>
+        <p>Giurista, ricercatrice specializzata in diritti umani e dell'infanzia (Ph.D), alterna consulenze per enti pubblici e privati in ambito di: europrogettazione, cooperazione internazionale ed emergenze umanitarie.</p>
+        <p>Dirigente di Terzo Settore (Responsabile Progetti e People Raising per Arka Eventi Culturali), è Founder delle start up TAPTA e INTRECCIO nonché ideatrice e Coordinatrice Scientifica di "Movere in Salus".</p>
+        
+        <div class="languages">
+          <div class="language-tag">Italiano</div>
+          <div class="language-tag">Inglese</div>
+          <div class="language-tag">Spagnolo</div>
+          <div class="language-tag">Francese</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Approach Section -->
+  <section id="approach" class="approach-section">
+    <div class="container">
+      <h2 class="section-title">Il mio approccio</h2>
+      <div class="approach-grid">
+        <div class="approach-card">
+          <h3><i class="fas fa-eye"></i> Visione strategica</h3>
+          <p>Opero con sedi in Sardegna e Toscana, ma il mio lavoro si estende oltre i confini regionali, con una forte vocazione europea.</p>
+        </div>
+        
+        <div class="approach-card">
+          <h3><i class="fas fa-map-marker-alt"></i> Radici territoriali</h3>
+          <p>Ogni progetto che seguo nasce da un ascolto profondo e da una progettazione su misura: non uso format standard, ma costruisco soluzioni replicabili e ad alto impatto, calibrate sulle esigenze reali di enti pubblici, imprese e comunità locali.</p>
+        </div>
+        
+        <div class="approach-card">
+          <h3><i class="fas fa-chart-line"></i> Impatto europeo</h3>
+          <p>Attivo reti, valorizzo talenti e accompagno i miei clienti nell'accesso a bandi europei, percorsi di validazione scientifica e collaborazioni internazionali. Il mio obiettivo? Trasformare le idee in sistemi sostenibili, misurabili e capaci di generare cambiamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">La mia consulenza</h2>
+      <div class="services-content">
+        <div class="services-text">
+          <p>La mia consulenza è operativa, trasparente e flessibile: lavoro sia in presenza che completamente online, garantendo continuità, precisione e co‑progettazione attiva.</p>
+          <p>Non avrete sorprese, lavoro con preventivi certi che seguiranno le vostre esigenze. Ho la mia sede fisica in Sardegna ma non ho confini.</p>
+        </div>
+        <div class="services-list">
+          <div class="service-item">
+            <h3>Europrogettazione</h3>
+            <p>Progettazione e gestione di proposte per finanziamenti europei in diversi programmi (Horizon Europe, Erasmus+, EU4Health, EIT Food, etc.)</p>
+          </div>
+          <div class="service-item">
+            <h3>Cooperazione Internazionale</h3>
+            <p>Consulenza per progetti di cooperazione internazionale, con particolare focus su diritti umani e dell'infanzia</p>
+          </div>
+          <div class="service-item">
+            <h3>Start-up Innovative</h3>
+            <p>Supporto alla creazione e sviluppo di start-up innovative nei settori cultura, turismo, agrifood e salute</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section - MIGLIORATA -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">I Miei Progetti</h2>
+      <div class="projects-grid">
+        <!-- TAPTA -->
+        <div class="project-card tapta">
+          <div class="card-header">
+            <h3>TAPTA</h3>
+            <p>Start-up innovativa in ambito di Engagement culturale e comunitario e agrifood</p>
+          </div>
+          <div class="card-body">
+            <ul class="project-list">
+              <li>Progetto nato nel 2023, supportato da EIT Food/EWA 2023</li>
+              <li>Eventi locali con forte partecipazione civica</li>
+              <li>Toolkit replicabile per iniziative culturali-turistiche</li>
+              <li>Risultato: 300+ partecipanti e percorsi di comunicazione territoriale</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://www.facebook.com/p/TAPTA-100094238708560/" class="project-link tapta" target="_blank">
+                <i class="fab fa-facebook-f"></i>Facebook
+              </a>
+              <a href="https://latestata.it/tag/tapta/" class="project-link tapta" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa 1
+              </a>
+              <a href="https://www.eitfood.eu/news/10-italian-entrepreneurs-selected-for-the-second-edition-of-ewa-programme-in-italy" class="project-link tapta" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa 2
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTRECCIO -->
+        <div class="project-card intreccio">
+          <div class="card-header">
+            <h3>INTRECCIO</h3>
+            <p>Progetto di empowerment e rete europea</p>
+          </div>
+          <div class="card-body">
+            <ul class="project-list">
+              <li>Progetto Erasmus / ingresso nel network FABLE</li>
+              <li>Formazione, advocacy e strumenti per il rafforzamento delle comunità locali</li>
+              <li>Output: toolkit formativo e reti transnazionali</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://www.facebook.com/profile.php?id=61553811782460" class="project-link intreccio" target="_blank">
+                <i class="fab fa-facebook-f"></i>Facebook
+              </a>
+              <a href="https://www.sardegnareporter.it/2023/11/tiziana-mori-il-progetto-intreccio-entra-nel-network-europeo-fable/573333/" class="project-link intreccio" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BORGHI IN SALUS -->
+        <div class="project-card borghi">
+          <div class="card-header">
+            <h3>BORGHI IN SALUS</h3>
+            <p>Progetto Pilota europeo della start-up "MOVERE in salus"</p>
+          </div>
+          <div class="card-body">
+            <ul class="project-list">
+              <li>Teso alla rigenerazione salute territoriale</li>
+              <li>Audit servizi, azioni per inclusione over65 e modelli di turismo generativo</li>
+              <li>Deliverable: protocollo pilota e roadmap replicabile per borghi minori</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://tizym.github.io/movere-in-salus/borghi.html#val-di-merse" class="project-link borghi" target="_blank">
+                <i class="fas fa-external-link-alt"></i>Sito
+              </a>
+              <a href="https://www.gazzettatoscana.it/movere-in-salus-a-bordo-di-innovationship-tiziana-mori-presenta-il-modello-che-rigenera-salute-territori-e-comunita/" class="project-link borghi" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa 1
+              </a>
+              <a href="https://www.virtual-village.it/startup/movere-in-salus/" class="project-link borghi" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa 2
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AGRIMOTUS -->
+        <div class="project-card agrimotus">
+          <div class="card-header">
+            <h3>AGRIMOTUS</h3>
+            <p>Micro-progetto europeo della start-up "MOVERE in salus"</p>
+          </div>
+          <div class="card-body">
+            <ul class="project-list">
+              <li>Hack Cassini / Innovation Ship</li>
+              <li>Connessione filiera agrifood e offerta turistica esperienziale</li>
+              <li>Attività: formazione operatori, itinerari di prodotto, marketplace locale</li>
+              <li>KPI target: produttori attivati e itinerari esperienziali</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://tizym.github.io/movere-in-salus/paper.html" class="project-link agrimotus" target="_blank">
+                <i class="fas fa-file-alt"></i>Paper
+              </a>
+              <a href="https://tizym.github.io/COSMOpet/europe.html" class="project-link agrimotus" target="_blank">
+                <i class="fas fa-globe-europe"></i>Europe
+              </a>
+              <a href="https://www.gazzettatoscana.it/studio-comparativo-sardegna-toscana-del-grupo-di-ricerca-movere-in-salus-modelli-innovativi-per-invecchiamento-attivo-e-turismo-generativo/" class="project-link agrimotus" target="_blank">
+                <i class="fas fa-newspaper"></i>Stampa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contatti</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Informazioni di Contatto</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>tiziana.mori@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>movereinsalus.it</div>
+            </div>
+          </div>
+          
+          <h3>Seguimi</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69" class="social-link" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://tizym.github.io/movere-in-salus/" class="social-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Invia un Messaggio</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Oggetto</label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Invia Messaggio</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tiziana Mori - Tutti i diritti riservati</p>
+      <div class="copyright">
+        <p>Giurista, ricercatrice specializzata in diritti umani e dell'infanzia (Ph.D) | European Project & Program Manager</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Simple form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Grazie per il tuo messaggio! Ti risponderò al più presto.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
