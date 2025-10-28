@@ -131,6 +131,20 @@
     .nav-buttons a:hover {
       background: rgba(255,255,255,0.1);
     }
+
+    <!-- Menu Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay">
+  <button class="close-btn" id="closeMenuBtn">
+    <i class="fas fa-times"></i>
+  </button>
+  <nav class="mobile-nav">
+    <a href="#about">Profilo</a>
+    <a href="#approach">Approccio</a>
+    <a href="#services">Servizi</a>
+    <a href="#projects">Progetti</a>
+    <a href="#contact">Contatti</a>
+  </nav>
+</div>
     
     /* Hero Section */
     .hero {
@@ -767,21 +781,28 @@
   </div>
 
   <!-- Header -->
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <h1>Tiziana Mori</h1>
-        <div class="tagline">European Project & Program Manager | Ricercatrice</div>
-      </div>
-      <div class="nav-buttons">
-        <a href="#about">Profilo</a>
-        <a href="#approach">Approccio</a>
-        <a href="#services">Servizi</a>
-        <a href="#projects">Progetti</a>
-        <a href="#contact">Contatti</a>
-      </div>
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <h1>Tiziana Mori</h1>
+      <div class="tagline">European Project & Program Manager | Ricercatrice</div>
     </div>
-  </header>
+    
+    <!-- Bottone menu mobile -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Menu desktop -->
+    <div class="nav-buttons">
+      <a href="#about">Profilo</a>
+      <a href="#approach">Approccio</a>
+      <a href="#services">Servizi</a>
+      <a href="#projects">Progetti</a>
+      <a href="#contact">Contatti</a>
+    </div>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section id="about" class="hero">
