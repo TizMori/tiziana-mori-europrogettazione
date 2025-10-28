@@ -26,9 +26,12 @@ Founder di MOVERE, consulente strategica e progettista con esperienza in rigener
 - **Agrimotus** – Innovazione rurale e comunità
 
 ## Contatti
+## Contatti
 📧 tiziana.mori@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tizmori)  
-🔗 [MOVERE](https://movere-sardegna.it)  
+🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
+🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
+
+
 
 📌 Per collaborazioni, consulenze o preventivi: scrivimi direttamente via email.
 ---
