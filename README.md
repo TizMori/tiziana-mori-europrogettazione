@@ -30,6 +30,7 @@ Founder di MOVERE, consulente strategica e progettista con esperienza in rigener
 📧 tiziana.mori@gmail.com  
 🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
 🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
+Website: https://tizmori.github.io/tiziana-mori-europrogettazione/
 
 
 
@@ -62,6 +63,7 @@ Founder of MOVERE, strategic consultant and project designer with expertise in t
 📧 tiziana.mori@gmail.com  
 🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
 🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
+Website: https://tizmori.github.io/tiziana-mori-europrogettazione/
 
 📌 For collaborations, consulting or quotes: feel free to reach out via email.
 ---
@@ -92,6 +94,7 @@ Fondatrice de MOVERE, consultante stratégique et experte en régénération ter
 📧 tiziana.mori@gmail.com  
 🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
 🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
+Website: https://tizmori.github.io/tiziana-mori-europrogettazione/
 
 📌 Pour des collaborations, services ou devis : contactez-moi par email.
 ---
@@ -122,5 +125,6 @@ Fundadora de MOVERE, consultora estratégica con experiencia en regeneración te
 📧 tiziana.mori@gmail.com  
 🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
 🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
+Website: https://tizmori.github.io/tiziana-mori-europrogettazione/
 
 📌 Para colaboraciones, servicios o presupuestos: escríbeme por correo electrónico.
