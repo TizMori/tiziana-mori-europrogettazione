@@ -25,7 +25,7 @@ Founder di MOVERE, consulente strategica e progettista con esperienza in rigener
 - **Intreccio** – Turismo sostenibile
 - **Agrimotus** – Innovazione rurale e comunità
 
-## Contatti
+
 ## Contatti
 📧 tiziana.mori@gmail.com  
 🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
@@ -58,9 +58,10 @@ Founder of MOVERE, strategic consultant and project designer with expertise in t
 - **Agrimotus** – Rural innovation and community  
 
 ## Contact
+
 📧 tiziana.mori@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tizmori)  
-🔗 [MOVERE](https://movere-sardegna.it)  
+🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
+🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
 
 📌 For collaborations, consulting or quotes: feel free to reach out via email.
 ---
@@ -87,9 +88,10 @@ Fondatrice de MOVERE, consultante stratégique et experte en régénération ter
 - **Agrimotus** – Innovation rurale et communauté  
 
 ## Contact
+
 📧 tiziana.mori@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tizmori)  
-🔗 [MOVERE](https://movere-sardegna.it)  
+🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
+🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
 
 📌 Pour des collaborations, services ou devis : contactez-moi par email.
 ---
@@ -116,8 +118,9 @@ Fundadora de MOVERE, consultora estratégica con experiencia en regeneración te
 - **Agrimotus** – Innovación rural y comunidad  
 
 ## Contacto
+
 📧 tiziana.mori@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/tizmori)  
-🔗 [MOVERE](https://movere-sardegna.it)  
+🔗 [LinkedIn – Tiziana Mori, Ph.D](https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69)  
+🔗 [MOVERE – Movere in Salus](https://tizym.github.io/movere-in-salus/)  
 
 📌 Para colaboraciones, servicios o presupuestos: escríbeme por correo electrónico.
