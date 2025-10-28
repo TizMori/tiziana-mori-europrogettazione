@@ -1,4 +1,4 @@
-/* MOBILE MENU OVERLAY */
+/* MOBILE MENU OVERLAY - VERSIONE CORRETTA */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -6,84 +6,14 @@
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    padding: 5px;
-}
-
-.mobile-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--dark), var(--primary));
-    z-index: 1000;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile-overlay.active {
-    display: flex;
-    animation: fadeIn 0.3s ease;
-}
-
-.mobile-overlay .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.mobile-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.mobile-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    z-index: 1001;
+    border-radius: 4px;
     transition: background 0.3s;
 }
 
-.mobile-nav a:hover {
+.mobile-menu-btn:hover {
     background: rgba(255, 255, 255, 0.1);
-}
-
-/* Mostra menu mobile solo su schermi piccoli */
-@media (max-width: 768px) {
-    .mobile-menu-btn {
-        display: block;
-    }
-    
-    .nav-buttons {
-        display: none;
-    }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* MOBILE MENU OVERLAY */
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 5px;
-    z-index: 1001;
 }
 
 .mobile-overlay {
@@ -113,27 +43,37 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.mobile-overlay .close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .mobile-nav {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+    text-align: center;
 }
 
 .mobile-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.3rem;
-    padding: 12px 30px;
-    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 15px 40px;
+    border-radius: 8px;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    font-weight: 500;
 }
 
 .mobile-nav a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Mostra menu mobile solo su schermi piccoli */
@@ -143,14 +83,17 @@
     }
     
     .nav-buttons {
-        display: none;
+        display: none !important;
+    }
+    
+    .header-content {
+        justify-content: space-between !important;
     }
 }
 
-/* Animazione */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .mobile-overlay.active {
