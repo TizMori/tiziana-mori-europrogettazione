@@ -1057,5 +1057,33 @@
       this.reset();
     });
   </script>
+  <script>
+  // Gestione menu mobile
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+    
+    // Apri menu
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Chiudi menu
+    function closeMobileMenu() {
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+    
+    closeMenuBtn.addEventListener('click', closeMobileMenu);
+    
+    // Chiudi menu quando si clicca su un link
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  });
+</script>
 </body>
 </html>
