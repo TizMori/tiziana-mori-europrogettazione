@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modello Borghi in Salus - Certificazione e Metodologia</title>
+    <style>
+        :root {
+            --primary: #2E5C6E;
+            --secondary: #A3B18A;
+            --accent: #f57f17;
+            --light: #f8f9fa;
+            --dark: #1b5e20;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .certification-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .certification-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .certification-hero .lead {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .certification-badge {
+            background: var(--accent);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 1.1rem;
+        }
+        
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .method-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .method-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .method-card ul {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .method-card li {
+            margin-bottom: 8px;
+        }
+        
+        .evidence-section {
+            background: var(--light);
+            padding: 50px 40px;
+            border-radius: 12px;
+            margin: 50px 0;
+        }
+        
+        .evidence-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+            font-size: 2rem;
+        }
+        
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .evidence-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+        
+        .evidence-item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .evidence-item strong {
+            color: var(--accent);
+        }
+        
+        .european-badge {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+        
+        .cta-section h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .certification-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .certification-hero .lead {
+                font-size: 1.2rem;
+            }
+            
+            .methodology-grid, .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .evidence-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="certification-hero">
+        <div class="container">
+            <span class="certification-badge">MODELLO CERTIFICATO E INNOVATIVO</span>
+            <h1>Borghi in Salus</h1>
+            <p class="lead">Metodologia proprietaria per la rigenerazione dei borghi rurali</p>
+            <p>Allineata con le strategie UE 2021-2027 per lo sviluppo rurale e la coesione territoriale</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="methodology-grid">
+            <div class="method-card">
+                <h3>📊 Audit Territoriale Certificato</h3>
+                <p>Analisi multidimensionale dei servizi essenziali e del capitale sociale per una rigenerazione mirata ed efficace</p>
+                <ul>
+                    <li>Mappatura servizi di prossimità e infrastrutture</li>
+                    <li>Analisi bisogni comunità over65 e giovani</li>
+                    <li>Valutazione infrastrutture digitali e di connessione</li>
+                    <li>Identificazione risorse culturali e ambientali</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h3>👥 Empowerment di Comunità e Donne</h3>
+                <p>Modelli di engagement e formazione per valorizzare le competenze locali e contrastare lo spopolamento</p>
+                <ul>
+                    <li>Formazione donne locali in ambito turistico e agrifood</li>
+                    <li>Toolkit partecipativi per coinvolgimento comunità</li>
+                    <li>Strategie di contrasto allo spopolamento giovanile</li>
+                    <li>Creazione di reti di impresa femminili</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h3>🏥 Salute Territoriale Integrata</h3>
+                <p>Protocolli innovativi per servizi socio-sanitari di prossimità e turismo generativo</p>
+                <ul>
+                    <li>Modelli di telemedicina per aree rurali</li>
+                    <li>Presidi socio-sanitari multidisciplinari</li>
+                    <li>Turismo sanitario e generativo</li>
+                    <li>Servizi di prossimità per anziani e famiglie</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="evidence-section">
+            <h2>Proof of Concept Verificata e Riconoscimenti</h2>
+            <div class="evidence-grid">
+                <div class="evidence-item">
+                    <span class="european-badge">EIT FOOD</span>
+                    <span class="european-badge">2023-2024</span>
+                    <h4>🎯 TAPTA - Turismo, Agrifood & Empowerment Femminile</h4>
+                    <p><strong>EWA Programme - EIT Food</strong></p>
+                    <ul>
+                        <li>300+ partecipanti attivati in eventi culturali e formativi</li>
+                        <li>Empowerment femminile certificato con formazione specifica</li>
+                        <li>Toolkit replicabile per turismo familiare esperienziale</li>
+                        <li>Progetto finalista al programma EIT Food EWA 2023</li>
+                    </ul>
+                </div>
+                
+                <div class="evidence-item">
+                    <span class="european-badge">ERASMUS+</span>
+                    <span class="european-badge">2024</span>
+                    <h4>🌍 INTRECCIO - Reti Europee e Formazione</h4>
+                    <p><strong>Erasmus+ / Network FABLE</strong></p>
+                    <ul>
+                        <li>Formazione competenze trasversali per comunità locali</li>
+                        <li>Scambio best practice transnazionale</li>
+                        <li>Capacity building per amministratori locali</li>
+                        <li>Inserimento nella rete europea FABLE per lo sviluppo rurale</li>
+                    </ul>
+                </div>
+                
+                <div class="evidence-item">
+                    <span class="european-badge">INNOVATION SHIP</span>
+                    <span class="european-badge">START UP ITALIA</span>
+                    <span class="european-badge">2025</span>
+                    <h4>🚀 BORGHI IN SALUS - Innovazione e Rigenerazione</h4>
+                    <p><strong>Innovation Ship 2025 & Start Up Italia 2025</strong></p>
+                    <ul>
+                        <li>Selezionata per Innovation Ship 2025 (Cassini Hackathon)</li>
+                        <li>Semifinalista Start Up Italia 2025</li>
+                        <li>Modello di rigenerazione servizi salute territoriale</li>
+                        <li>Protocollo pilota replicabile per borghi minori</li>
+                    </ul>
+                </div>
+                
+                <div class="evidence-item">
+                    <span class="european-badge">CASSINI HACKATHON</span>
+                    <span class="european-badge">2025</span>
+                    <h4>🌾 AGRIMOTUS - Filiera Agrifood & Turismo Esperienziale</h4>
+                    <p><strong>Cassini Hackathon / Innovation Ship</strong></p>
+                    <ul>
+                        <li>Connessione filiera agrifood e offerta turistica</li>
+                        <li>Formazione operatori per esperienze autentiche</li>
+                        <li>Itinerari di prodotto e marketplace locale</li>
+                        <li>Finalista Cassini Hackathon Bologna 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Vuoi applicare il modello certificato al tuo territorio?</h2>
+            <p>Prenota un audit preliminare gratuito di 30 minuti per valutare le opportunità di finanziamento UE</p>
+            <a href="contact.html" class="btn-primary">
+                Richiedi Audit Gratuito
+            </a>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">Disponibilità limitata - Solo per enti e amministrazioni</p>
+        </div>
+    </section>
+</body>
+</html>
