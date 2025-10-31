@@ -343,7 +343,32 @@
     .services-list {
       flex: 1;
     }
-    
+.consulenza-box {
+    border: 2px solid #1a5276;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.95);
+    position: relative;
+    font-size: 0.95em;
+    line-height: 1.6;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.consulenza-box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1a5276, #2e7d32);
+    z-index: -1;
+    opacity: 0.1;
+}
+   
     .service-item {
       background: white;
       padding: 25px;
@@ -866,13 +891,12 @@
 
   <!-- Services Section -->
   <section id="services" class="services-section">
-    <div class="container">
-      <h2 class="section-title">La mia consulenza</h2>
-      <div class="services-content">
-        <div class="services-text">
-          <p>La mia consulenza è operativa, trasparente e flessibile: lavoro sia in presenza che completamente online, garantendo continuità, precisione e co‑progettazione attiva.</p>
-          <p>Non avrete sorprese, lavoro con preventivi certi che seguiranno le vostre esigenze. Ho la mia sede fisica in Sardegna ma non ho confini.</p>
-        </div>
+    <div class="services-text">
+    <div class="consulenza-box">
+        <p>La mia consulenza è operativa, trasparente e flessibile: lavoro sia in presenza che completamente online, garantendo continuità, precisione e co‑progettazione attiva.</p>
+        <p>Non avrete sorprese, lavoro con preventivi certi che seguiranno <strong>le</strong> vostre esigenze. Ho la mia sede fisica in Sardegna ma non ho confini.</p>
+    </div>
+</div>
         <div class="services-list">
           <div class="service-item">
             <h3>Europrogettazione</h3>
