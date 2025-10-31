@@ -1029,29 +1029,104 @@
         </div>
     </div>
 </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
+  <!-- Sezione Pulsanti Progetti -->
+<section style="background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e9 100%); padding: 60px 20px; text-align: center;">
     <div class="container">
-      <h2 class="section-title">Contatti</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>Informazioni di Contatto</h3>
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>tiziana.mori@gmail.com</div>
+        <h2 style="font-size: 2.2rem; margin-bottom: 40px; color: #1a5276; font-family: 'Merriweather', serif;">
+            I Miei Approcci Principali
+        </h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <!-- Pulsante TAPTA -->
+            <a href="approcci-strategici.html#tapta" 
+               style="flex: 1; min-width: 250px; max-width: 300px; background: linear-gradient(135deg, #2E5C6E 0%, #A3B18A 100%); color: white; padding: 25px 20px; border-radius: 15px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(46, 92, 110, 0.3);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🎯 TAPTA</h3>
+                <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 15px;">Turismo, Agrifood & Empowerment Femminile</p>
+                <span style="font-weight: bold; font-size: 0.9rem;">Scopri l'approccio →</span>
+            </a>
+
+            <!-- Pulsante Borghi in Salus -->
+            <a href="approcci-strategici.html#borghi" 
+               style="flex: 1; min-width: 250px; max-width: 300px; background: linear-gradient(135deg, #D9CBA3 0%, #7E8C69 100%); color: #333; padding: 25px 20px; border-radius: 15px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(217, 203, 163, 0.3);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 10px;">🏥 Borghi in Salus</h3>
+                <p style="font-size: 1rem; opacity: 0.9; margin-bottom: 15px;">Rigenerazione Servizi Salute Territoriale</p>
+                <span style="font-weight: bold; font-size: 0.9rem;">Scopri l'approccio →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <!-- Contact Section - Versione Semplice e Diretta -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Contatti</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contatti Diretti</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong>Email diretta:</strong><br>
+                            tiziana.mori@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                                                  
+                    </div>
+                </div>
+                
+                <div style="background: #f0f9f0; padding: 20px; border-radius: 10px; margin-top: 20px; border-left: 4px solid #2e7d32;">
+                    <h4 style="color: #2e7d32; margin-bottom: 10px;">📧 Inviami un'email diretta</h4>
+                    <p style="margin-bottom: 15px;">Preferisci contattarmi direttamente? Clicca il pulsante qui sotto:</p>
+                    <a href="mailto:tiziana.mori@gmail.com?subject=Consulta%20zione%20Progetti%20UE&body=Salve%20Tiziana,%20sono%20interessato/a%20ai%20tuoi%20servizi%20di%20europrogettazione." 
+                       style="background: #2e7d32; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold;">
+                       📩 Invia Email Diretta
+                    </a>
+                </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div>movereinsalus.it</div>
+            
+            <div class="contact-form">
+                <h3>Richiedi Informazioni</h3>
+                <p style="margin-bottom: 20px; color: #666;">Compila il form per richiedere informazioni specifiche sui miei servizi.</p>
+                
+                <form action="https://formsubmit.co/tiziana.mori@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nuova richiesta dal sito web">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="name">Nome *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Servizio di interesse</label>
+                        <select id="service" name="service" class="form-control">
+                            <option value="">Seleziona un servizio</option>
+                            <option value="europrogettazione">Europrogettazione</option>
+                            <option value="consulenza">Consulenza strategica</option>
+                            <option value="startup">Supporto startup</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio *</label>
+                        <textarea id="message" name="message" class="form-control" required placeholder="Descrivi brevemente la tua esigenza..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Invia Richiesta
+                    </button>
+                </form>
             </div>
-          </div>
-          
+        </div>
+    </div>
+</section>
           <h3>Seguimi</h3>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/tiziana-mori-ph-d-98751a69" class="social-link" target="_blank">
